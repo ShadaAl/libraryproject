@@ -1,1 +1,19 @@
-<h1>Hello from {{ name }}!</h1>
+{% extends "layouts/base.html" %}
+ 
+{% load static %}
+ 
+{% block title %} My First Index HTML Page {% endblock title %}
+ 
+{% block content %}
+  <h1 style="color: blue;"> Shada's Library </h1>
+  <p style="color: white;background-color: black;">Welcome to Shada's Library! Here you can explore a collection of books on programming, web development, and more. </p>
+  <a href="https://www.w3schools.com/html/default.asp">Click Here to learn more about HTML & CSS</a>
+  <hr>
+  <!-- This is a comment in HTML, not render in the bowser -->
+  <h2>Other Information</h2>
+  <p> <br/> This website is designed to help you find books easily and get quick information about each book. <br/> We update our collection regularly with new titles. Stay tuned for more!</p>
+  <hr>
+  
+  <h2>Additional Notes</h2>
+  <p>Here you can add other relevant information, such as upcoming features, recommended books, or tips for learners.</p>
+{% endblock content %}
